@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background-image: url('image/login.jpg'); 
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-color: rgba(3, 45, 27, 0.53); /*greenish overlay */
+    background-blend-mode: overlay; /* Blends image with the background color */
+    color: #333; /*for contrast */
+    padding: 50px;
+}
+
+h1, h2 {
+    color: #2f7a2f; /*for headings */
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 40px; /*heading font size */
+}
+
+form {
+    background: linear-gradient(to bottom, #ffffff 10%, #f0f0f0  90%); /* Half white, half light gray */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #6abf6a; /* Lighter green border on the form */
+    max-width: 900px;
+    margin: auto; /* Center the form */
+}
+
+
+
+h3, h4, label {
+    color: #4aaf51; /* kulay ng font sa author and lahat except h1 h2 */
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 16px; 
+}
+
+input[type="text"], input[type="date"], input[type="email"], input[type="number"], select {
+    border: 1px solid #888; /* boarder ng input box gray kulay yan */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px;
+    margin-bottom: 10px;
+    width: auto; /*flexibility in input width */
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #4aaf51; /* Change border color on focus */
+}
+
+select {
+    padding: 5px; /* Add padding for dropdown */
+}
+
+.contact {
+display:block;
+font-size: small;
+margin-left: 40px;
+align-content: center;
+}
+.program {
+    display: flex; /* Flexbox for even distribution */
+    justify-content: center; /* Center both fields */
+    gap: 25px; /* Space between elements */
+}
+
+.program .inline-block {
+    display: inline-block;
+    margin-right: 50px; /* Add space between the two inline blocks */
+    vertical-align: top;
+    text-align: center;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4aaf51; /*color of the button */
+    color: white; /* button color*/
+    border: none; /* no border */
+    padding: 15px 40px; /* slightly smaller padding for a smaller button */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* nag papalit ng cursor design kapag nadikit sa button */
+    margin: 20px auto 0; /* Center the button */
+    font-size: 16px; /* slightly smaller font size for button */
+    display: block; /* Make the button a block element */
+    width: 100%; /* Full width button */
+    max-width: 850px; /* slightly smaller max-width */
+}
+
+
+button:hover {
+    color: #000000; /* nag iiba kulay kapag natutok don sa button*/
+}
+
+.error {
+    color: red; /* Error message color */
+    margin-right: 70
+    px; /* Space between input and error */
+}
+
+.notification {
+    display: none; /* Hidden by default */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #ffe6e6; /* Light red background */
+    color: red; /* Text color */
+    border: 1px solid red; /* Border for the notification */
+}
+
+.invisible {
+    height: 50px; /* Specify height to occupy space */
+    background-color: transparent; /* Make the background transparent */
+    visibility: hidden; /* Hides the element but it still takes up space */
+}
+
+.transparent {
+    color: transparent; /* Makes the text invisible but keeps the element in the layout */
+    height: 20px; /* Specify height to occupy space */
+}
+
